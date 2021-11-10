@@ -17,8 +17,15 @@ minha_idade = 2021 - minha_data_nasc
 # Variavel numerica (ponto flutuante)
 meu_salario = float(input("Digite seu salario: "))
 
-# Variavel booleana (True/False) 
-sou_professor = True
+minha_profissao = input("Digite sua profissao: ")
+
+# Variavel booleana (True/False)  
+sou_professor = minha_profissao.upper() == "PROFESSOR"
+
+# "Professor" -> upper -> "PROFESSOR" == "PROFESSOR"
+# minha_profissao -> "Professor"
+
+print(type(sou_professor))
 
 mensagem = f"Ola {nome_completo}, voce tem {minha_idade} anos. Voce e professor? R: {sou_professor} e ganha R${meu_salario}."
 
